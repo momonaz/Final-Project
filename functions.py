@@ -2,7 +2,7 @@ import plant_api
 
 
 def get_plant_info(plant_name, api_key):
-    url = f"https://trefle.io/api/v1/plants/search?q={plant_name}&token={api_key}"
+    url = "https://trefle.io/api/v1/plants/search?q=" + plant_name + "&token=" + api_key
 
     try:
         response = requests.get(url)
