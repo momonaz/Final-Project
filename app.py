@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 def index():
     # Your plant name
-    plant_name = "Your_Plant_Name_Here"
+    plant_name = "Rosa arvensis"
     # Your Trefle API key
     api_key = "a934db7ornxS2TrWNztoLRdafZo6ZDEv3Sip1GaUZL0"
     plant_info = get_plant_info(plant_name, api_key)
