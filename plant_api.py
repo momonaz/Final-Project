@@ -34,7 +34,7 @@ def fetch_plant_info(api_token, plant_name):
 api_token = 'a934db7ornxS2TrWNztoLRdafZo6ZDEv3Sip1GaUZL0'
 
 # Replace 'plant_name' with the name of the plant you want to fetch information for
-plant_name = 'rose'
+plant_name = 'Rosa arvensis'
 
 # Fetch plant information
 plant_info = fetch_plant_info(api_token, plant_name)
