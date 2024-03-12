@@ -27,7 +27,7 @@ def fetch_plant_info(api_token, plant_name):
         else:
             return None
     else:
-        print(f"Failed to fetch plant information: {response.status_code}")
+        print("Failed to fetch plant information: {}".format(response.status_code))
         return None
 
 # Replace 'YOUR_API_TOKEN' with your actual Trefle API token
