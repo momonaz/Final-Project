@@ -1,4 +1,4 @@
-import plant_api
+import requests
 
 def fetch_plant_info(api_token, plant_name):
     url = f"https://trefle.io/api/plants?q={plant_name}&token={api_token}"
