@@ -41,7 +41,7 @@ plant_info = fetch_plant_info(api_token, plant_name)
 
 if plant_info:
     print("Plant Information:")
-    print(f"Common Name: {plant_info['common_name']}")
+    print("Common Name:", plant_info['common_name'])
     print(f"Scientific Name: {plant_info['scientific_name']}")
     print(f"Family: {plant_info['family']}")
 else:
