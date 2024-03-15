@@ -17,13 +17,18 @@
             <input type="text" id="plant_name" name="plant_name" required>
             <button type="submit">Submit</button>
         </form>
+        <br>
+        <hr>
 
         {% if plant_info %}
         <div class="plant-info">
             <h2>Plant Information</h2>
             <p><strong>Common Name:</strong> {{ plant_info.common_name }}</p>
             <p><strong>Scientific Name:</strong> {{ plant_info.scientific_name }}</p>
-            <p><strong>Family:</strong> {{ plant_info.family }}</p>
+            <p><strong>Year:</strong> The first publication year of a valid name of this species was in {{ plant_info.year }}</p>
+            <p><strong>Description:</strong> {{ plant_info.description }}</p>
+            <p><strong>Image:</strong></p>
+            <img src="{{ plant_info['image_url'] }}" alt="Plant Image">
         </div>
         {% endif %}
     </main>
